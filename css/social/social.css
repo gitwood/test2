@@ -8,10 +8,10 @@
     margin-bottom: 10px;
     margin-top: 25px;
 }
-.social__link{
+.b-social__link{
     font-size: 16px;
     color: green;
 }
-.social__link:hover {
+.b-social__link:hover {
     background-color: yellow;
 }
