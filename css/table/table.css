@@ -3,7 +3,7 @@
     margin: 10px auto;
     text-align: center;
 }
-.b-table__tr, .b-table__th{
+.b-table__tr{
     padding: 5px;
     background-color: #eee;
 }
