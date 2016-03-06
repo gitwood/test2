@@ -1,6 +1,6 @@
 .b-card{
     position:relative;
-    width:600px;
+    width:640px;
     margin: 0 auto;
     text-align:center;
     background-color: white;
@@ -17,3 +17,66 @@
     left: 0;
     top: 0;
 }
+/* Chrome, Safari, Opera */	
+	@-webkit-keyframes example {
+    from {-webkit-transform: rotateY(0deg);}
+    to {-webkit-transform: rotateY(360deg);}
+}
+	@keyframes example {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+/* Chrome, Safari, Opera */
+    @-webkit-keyframes example2 {
+    from {left: 40px;}
+    to {left: 640px;}
+}
+
+    @keyframes example2 {
+    from {left: 40px;}
+    to {left: 640px;}
+}
+
+.b-card__img1,.b-card__img2,.b-card__img3,.b-card__img4 {width:640px;}
+
+.b-card__lapa {
+	display:block;
+	width:50px;
+	position: relative;	
+   -webkit-animation: example2 6s infinite steps(5); /* Chrome, Safari, Opera */
+    animation: example2 6s infinite steps(5);  	
+	}
+
+
+.b-logo {	
+	animation-name: example;
+	animation-duration: 3s;
+    animation-iteration-count: infinite;	
+	}
+	
+.b-card__img1:hover {
+       -webkit-transform:scale(1.2,1.2); /* Chrome, Safari, Opera */
+       transform: scale(1.2,1.2);
+       transition: transform 3s;	
+}
+.b-card__img2:hover {
+       -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+       transform: rotate(-20deg);
+       transition: transform 3s;  	
+}
+.b-card__container {
+    -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
+    perspective: 150px;		
+}
+.b-card__img3:hover {
+       -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+       transform: rotateX(20deg);
+       transition: transform 3s; 
+}
+.b-card__img4:hover {       
+    -webkit-transform: rotateY(360deg); /* Safari */
+    transform: rotateY(360deg);
+	transition: transform 3s;	
+	animation-timing-function:cubic-bezier(0.25,4,4,0.25);
+}  	
