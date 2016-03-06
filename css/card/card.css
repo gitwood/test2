@@ -29,12 +29,12 @@
 
 /* Chrome, Safari, Opera */
     @-webkit-keyframes example2 {
-    from {left: 20px;}
+    from {left: 40px;}
     to {left: 640px;}
 }
 
     @keyframes example2 {
-    from {left: 20px;}
+    from {left: 40px;}
     to {left: 640px;}
 }
 
