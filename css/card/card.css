@@ -49,10 +49,9 @@
 	}
 
 
-.b-logo {	
-	animation-name: example;
-	animation-duration: 3s;
-    animation-iteration-count: infinite;	
+.b-logo {
+	-webkit-animation: example 3s infinite ; /* Chrome, Safari, Opera */
+        animation: example 3s infinite; 
 	}
 	
 .b-card__img1:hover {
