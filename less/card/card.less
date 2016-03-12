@@ -1,1 +1,72 @@
+.b-logo {
+	-webkit-animation: example 3s infinite ; /* Chrome, Safari, Opera */
+        animation: example 3s infinite; 
+	}
 
+.b-card{
+    position:relative;
+    width:640px;
+    margin: 0 auto;
+    text-align:center;
+    background-color: @bgcard;
+    overflow: hidden;
+    &__title{
+    font-size: 40px;
+    color: orange;
+    }
+    &__lapa {
+	display:block;
+	width:50px;
+	position: relative;	
+   -webkit-animation: example2 6s infinite steps(5); /* Chrome, Safari, Opera */
+    animation: example2 6s infinite steps(5);  	
+	  }
+	  &__img1, &__img2, &__img3, &__img4 {width:640px;}
+	  &__img1:hover {
+       -webkit-transform:scale(1.2,1.2); /* Chrome, Safari, Opera */
+       transform: scale(1.2,1.2);
+       transition: transform 3s;	
+}
+    &__img2:hover {
+       -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+       transform: rotate(-20deg);
+       transition: transform 3s;  	
+}
+    &__container {
+    -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
+    perspective: 150px;		
+}
+   &__img3:hover {
+       -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+       transform: rotateX(20deg);
+       transition: transform 3s; 
+} 
+
+   &__img4:hover {       
+    -webkit-transform: rotateY(360deg); /* Safari */
+    transform: rotateY(360deg);
+	transition: transform 3s;	
+	animation-timing-function:cubic-bezier(0.25,4,4,0.25);
+} 
+}
+//Анимации example и example2
+/* Chrome, Safari, Opera */	
+	@-webkit-keyframes example {
+    from {-webkit-transform: rotateY(0deg);}
+    to {-webkit-transform: rotateY(360deg);}
+}
+	@keyframes example {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+/* Chrome, Safari, Opera */
+    @-webkit-keyframes example2 {
+    from {left: 50px;}
+    to {left: 640px;}
+}
+
+    @keyframes example2 {
+    from {left: 50px;}
+    to {left: 640px;}
+}
